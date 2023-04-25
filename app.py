@@ -142,10 +142,23 @@ options = options.sort_values(ascending = False)
 final_9_dfs = [rod_qb, rod_rb, rod_wr, rod_te]
 final_9 = pd.DataFrame([final_9_dfs], columns = ["QBs", "RBs", "WRs", "TEs"])
 
+### Sidebar ###
+
+st.sidebar.markdown(" ## About This App")
+st.sidebar.markdown("This app is designed to be used while you draft on Underdog. Simply add the positions you've drafted (in order) and see what position the simulations suggest you draft next! With every pick the sample size of drafts the simulation has seen will become smaller and smaller. If you ever get to a point where there are no suggestions, you can add that build to the database by clicking the link below.")
+st.sidebar.markdown("Please note that these are suggestions! You in no way need to draft the top position each time. Especially if there's a much better ADP value at another position! This is meant to be a guide to help out as much as possible. It's also helpful to know how to end the final 9 rounds if you've started off with a build that the simulations have seen before")
+st.sidebar.info("Submit new builds for the model to simulate [here](https://docs.google.com/forms/d/e/1FAIpQLScU-QkFbC1ld95W8uiLUMNHg3liCPsnOGzTxpJsN1f0_4VPAg/viewform).")
+st.sidebar.markdown("## A Few Notes")
+st.sidebar.markdown("* The data is based off the draft strategy simulation study conducted [here](https://www.thefantasyfootballadvice.com/underdog-simulations/)")
+st.sidebar.markdown("* You can view and download the data [here](https://www.thefantasyfootballadvice.com/draft-package/underdog-simulation-results/)")
+st.sidebar.markdown("* There are plenty of builds not yet run! You can sumbit new ones [here](https://docs.google.com/forms/d/e/1FAIpQLScU-QkFbC1ld95W8uiLUMNHg3liCPsnOGzTxpJsN1f0_4VPAg/viewform)")
+
+
+### Tables ###
+
 st.write("* The below table displays what position you should draft next.")
 st.write("* If the table is empty then no drafts for that build have been simulated.")
-st.write("You can submit new builds to be run here: ")
-st.write("https://docs.google.com/forms/d/e/1FAIpQLScU-QkFbC1ld95W8uiLUMNHg3liCPsnOGzTxpJsN1f0_4VPAg/viewform")
+st.write("You can submit new builds to be run [here](https://docs.google.com/forms/d/e/1FAIpQLScU-QkFbC1ld95W8uiLUMNHg3liCPsnOGzTxpJsN1f0_4VPAg/viewform)")
 st.write("Total Sample Size: ", len(so_far))
 
 st.dataframe(data = options)
