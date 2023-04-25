@@ -8,11 +8,11 @@ url = 'https://raw.githubusercontent.com/nzylakffa/Underdog_2/main/Underdog%20Op
 
 df = pd.read_csv(url,index_col=0)
 
-st.title("Input Positions Drafted")
+st.title("Underdog Draft Strategy App")
 st.header("Submit a Max of 9 Rounds!")
 
 ### Imput Picks Thus Far ###
-picks = st.multiselect(label = "Must be done in order!", options = ["QB", "QB", "QB", "QB", "QB",
+picks = st.multiselect(label = "Add positions you've drafted - Must be done in order!", options = ["QB", "QB", "QB", "QB", "QB",
                                                               "RB", "RB", "RB", "RB", "RB", "RB", "RB", "RB", "RB",
                                                               "WR", "WR", "WR", "WR", "WR", "WR", "WR", "WR", "WR",
                                                               "TE", "TE", "TE", "TE"])
