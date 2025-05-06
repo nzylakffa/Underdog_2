@@ -1,4 +1,4 @@
-"player_id","first_name","last_name","adp","projectedPoints","positionRank","slotName","teamName","lineupStatus","byeWeek"
+"id","first_name","last_name","adp","projectedPoints","positionRank","slotName","teamName","lineupStatus","byeWeek"
 "b24eb93f-72bd-4c23-bed6-807d542bab65","Ja'Marr","Chase","1.1","260.2","WR1","WR","Cincinnati Bengals",,
 "1dad2b6f-6089-4844-8319-6f1eb23b5003","Saquon","Barkley","2.5","284.7","RB1","RB","Philadelphia Eagles",,
 "fb2b25a4-b791-4ef0-bc45-41099b503a69","Justin","Jefferson","3.3","245.3","WR2","WR","Minnesota Vikings",,
